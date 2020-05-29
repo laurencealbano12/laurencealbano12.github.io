@@ -374,7 +374,7 @@
             
             <div class="ftr_btm_content">
                 <div class="wrapper">
-                    <p>&copy; Copyright 2019 - 2020 <small class="remove_sp">|</small> <span>Sealed Bonds Film by Laurence</span></p>
+                    <p>&copy; Copyright 2019 - <small id="currentYear"></small> <small class="remove_sp">|</small> <span>Sealed Bonds Film by Laurence</span></p>
                 </div>
             </div>
                 
@@ -389,5 +389,8 @@
 <script src="inventory/js/plugins.js"></script>
 <script src="inventory/js/responsiveslides.min.js"></script>
 <script src="inventory/js/owl.carousel.js"></script>
-
+<script>
+    new Date().getFullYear()
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
 </html>
